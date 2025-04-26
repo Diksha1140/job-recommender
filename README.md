@@ -1,4 +1,3 @@
-# job-recommender
 # Job Recommender System
 
 A Flask-based web app that parses resumes, extracts skills using NLTK, and matches candidates to jobs.
@@ -18,3 +17,10 @@ A Flask-based web app that parses resumes, extracts skills using NLTK, and match
 
 ## Technologies
 - Python, Flask, NLTK, Gunicorn
+
+## Deployment on Render
+1. Create a Render account and link your GitHub repository.
+2. Create a Web Service, select the repository, and set:
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `gunicorn -w 4 -b 0.0.0.0:8000 run:app`
+3. Deploy and access at the provided `.onrender.com` URL.
