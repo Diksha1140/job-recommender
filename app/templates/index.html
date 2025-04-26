@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Resume{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Upload Your Resume</h4>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('main.upload_file') }}" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Resume (PDF/DOC/DOCX)</label>
+                        <input class="form-control" id="resume" name="resume" type="file" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Analyze Resume</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

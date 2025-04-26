@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Python Developer",
+    "company": "Tech Innovations Inc.",
+    "description": "Looking for an experienced Python developer to join our fast-paced team. The ideal candidate will have experience with web frameworks, RESTful APIs, and database design.",
+    "skills_required": [
+      "python",
+      "django",
+      "flask",
+      "sql",
+      "git",
+      "aws"
+    ],
+    "location": "Remote",
+    "salary_range": "$90,000 - $120,000"
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "company": "Data Insights Co.",
+    "description": "Seeking a data scientist to analyze complex datasets and develop machine learning models. Must have strong Python skills and experience with data visualization.",
+    "skills_required": [
+      "python",
+      "machine learning",
+      "data science",
+      "sql",
+      "tensorflow",
+      "pandas"
+    ],
+    "location": "New York, NY",
+    "salary_range": "$110,000 - $140,000"
+  },
+  {
+    "id": 3,
+    "title": "Java Backend Developer",
+    "company": "Enterprise Solutions",
+    "description": "Join our team to develop scalable backend services using Java. Experience with Spring Boot and microservices architecture is required.",
+    "skills_required": [
+      "java",
+      "spring",
+      "sql",
+      "kubernetes",
+      "docker",
+      "ci/cd"
+    ],
+    "location": "Chicago, IL",
+    "salary_range": "$95,000 - $125,000"
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "company": "Cloud Systems Inc.",
+    "description": "Looking for a DevOps engineer to automate deployment processes and manage cloud infrastructure. Experience with containerization and CI/CD pipelines is essential.",
+    "skills_required": [
+      "docker",
+      "kubernetes",
+      "jenkins",
+      "aws",
+      "git",
+      "python",
+      "ci/cd"
+    ],
+    "location": "Remote",
+    "salary_range": "$100,000 - $130,000"
+  },
+  {
+    "id": 5,
+    "title": "Full Stack Developer",
+    "company": "WebApp Creators",
+    "description": "Seeking a versatile developer comfortable with both frontend and backend technologies. Must be able to work in an agile environment.",
+    "skills_required": [
+      "javascript",
+      "react",
+      "node",
+      "python",
+      "sql",
+      "git",
+      "agile"
+    ],
+    "location": "San Francisco, CA",
+    "salary_range": "$105,000 - $135,000"
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning Engineer",
+    "company": "AI Innovations",
+    "description": "Join our team to develop and deploy machine learning models for production use. Strong Python skills and experience with deep learning frameworks required.",
+    "skills_required": [
+      "python",
+      "machine learning",
+      "tensorflow",
+      "pytorch",
+      "docker",
+      "git",
+      "data science"
+    ],
+    "location": "Boston, MA",
+    "salary_range": "$115,000 - $150,000"
+  }
+]

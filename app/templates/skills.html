@@ -1,0 +1,74 @@
+<!-- app/templates/job_details.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ job.title }} - Job Details{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">{{ job.title }}</h3>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4>{{ job.company }}</h4>
+                    <p class="text-muted"><i class="bi bi-geo-alt"></i> {{ job.location }}</p>
+                    {% if job.salary_range %}
+                        <p class="text-muted"><i class="bi bi-cash"></i> {{ job.salary_range }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col">
+                    <h5>Job Description</h5>
+                    <p>{{ job.description }}</p>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Required Skills</h5>
+                    <div>
+                        {% for skill in job.skills_required %}
+                            {% if skill in matching_skills %}
+                                <span class="badge bg-success me-2 mb-2">{{ skill }}</span>
+                            {% else %}
+                                <span class="badge bg-secondary me-2 mb-2">{{ skill }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col">
+                    <h5>Skills Match Analysis</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Your Matching Skills</h6>
+                            <div class="mb-3">
+                                {% for skill in matching_skills %}
+                                    <span class="badge bg-success me-2 mb-2">{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                            
+                            <h6>Skills To Develop</h6>
+                            <div>
+                                {% for skill in missing_skills %}
+                                    <span class="badge bg-warning me-2 mb-2">{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a href="{{ url_for('main.show_matches') }}" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back to Matches</a>
+            <a href="#" class="btn btn-success float-end">Apply for Job</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
