@@ -1,5 +1,6 @@
 # app/__init__.py
 from flask import Flask
+import nltk_setup
 from app.config import Config
 
 def create_app(config_class=Config):
