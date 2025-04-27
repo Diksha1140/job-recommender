@@ -2,6 +2,7 @@
 
 A Flask-based web app that parses resumes, extracts skills using NLTK, and matches candidates to jobs.
 
+
 ## Setup
 1. Clone: `git clone https://github.com/Diksha1140/job-recommender`
 2. Create virtual environment: `python -m venv venv`
